@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B85F4516-28EE-4AFB-A7DC-193AFA6A0CFF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nhom02_QuanLyNhaHang</RootNamespace>
+    <AssemblyName>Nhom02_QuanLyNhaHang</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChiTietHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChiTietHD.Designer.cs">
+      <DependentUpon>ChiTietHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangNhap.designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatMon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatMon.Designer.cs">
+      <DependentUpon>DatMon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoiMatKhau.Designer.cs">
+      <DependentUpon>DoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoaDon.Designer.cs">
+      <DependentUpon>HoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhachHang.Designer.cs">
+      <DependentUpon>KhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhanVien.Designer.cs">
+      <DependentUpon>NhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order.Designer.cs">
+      <DependentUpon>Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SanPham.Designer.cs">
+      <DependentUpon>SanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaiKhoan.Designer.cs">
+      <DependentUpon>TaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemKH.Designer.cs">
+      <DependentUpon>ThemKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongTinNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongTinNV.Designer.cs">
+      <DependentUpon>ThongTinNV.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ChiTietHD.resx">
+      <DependentUpon>ChiTietHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatMon.resx">
+      <DependentUpon>DatMon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoiMatKhau.resx">
+      <DependentUpon>DoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoaDon.resx">
+      <DependentUpon>HoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhachHang.resx">
+      <DependentUpon>KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MyReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVien.resx">
+      <DependentUpon>NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order.resx">
+      <DependentUpon>Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SanPham.resx">
+      <DependentUpon>SanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaiKhoan.resx">
+      <DependentUpon>TaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemKH.resx">
+      <DependentUpon>ThemKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongTinNV.resx">
+      <DependentUpon>ThongTinNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{f9860b73-2b01-4c9e-8e33-045fb12f001c}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="img\SundryPhoto\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="img\NhanVien\Nam\Nam01.png" />
+    <Content Include="img\NhanVien\Nam\Nam02.png" />
+    <Content Include="img\NhanVien\Nam\Nam03.png" />
+    <Content Include="img\NhanVien\Nam\Nam04.png" />
+    <Content Include="img\NhanVien\Nam\Nam05.png" />
+    <Content Include="img\NhanVien\Nam\Nam06.png" />
+    <Content Include="img\NhanVien\Nam\Nam07.png" />
+    <Content Include="img\NhanVien\Nam\Nam08.png" />
+    <Content Include="img\NhanVien\Nam\Nam09.png" />
+    <Content Include="img\NhanVien\Nam\Nam10.png" />
+    <Content Include="img\NhanVien\Nu\Nu01.png" />
+    <Content Include="img\NhanVien\Nu\Nu02.png" />
+    <Content Include="img\NhanVien\Nu\Nu03.png" />
+    <Content Include="img\NhanVien\Nu\Nu04.png" />
+    <Content Include="img\NhanVien\Nu\Nu05.png" />
+    <Content Include="img\NhanVien\Nu\Nu06.png" />
+    <Content Include="img\NhanVien\Nu\Nu07.png" />
+    <Content Include="img\NhanVien\Nu\Nu08.png" />
+    <Content Include="img\NhanVien\Nu\Nu09.png" />
+    <Content Include="img\NhanVien\Nu\Nu10.png" />
+    <Content Include="img\SanPham\Bia Heineken.jpg" />
+    <Content Include="img\SanPham\Bia Tiger.jpg" />
+    <Content Include="img\SanPham\Bánh Kem Socola.jpg" />
+    <Content Include="img\SanPham\Bánh Kem Trứng.jpg" />
+    <Content Include="img\SanPham\Bánh KOROKKE Nhân Thịt Bò.jpg" />
+    <Content Include="img\SanPham\Bánh Mật Ong.jpg" />
+    <Content Include="img\SanPham\Bánh Phô Mai.jpg" />
+    <Content Include="img\SanPham\Bánh Xếp Nhân Thịt Heo Chiên Giòn.jpg" />
+    <Content Include="img\SanPham\Bánh Xếp.jpg" />
+    <Content Include="img\SanPham\Bạch Tuộc Nướng Sa Tế.jpg" />
+    <Content Include="img\SanPham\Cá Lóc Nướng Mỡ Hành.jpg" />
+    <Content Include="img\SanPham\Cơm Chiên Hải Sản.jpg" />
+    <Content Include="img\SanPham\Cơm Chiên Kim Chi Hải Sản.jpg" />
+    <Content Include="img\SanPham\Hải Sản Xào Chua Ngọt.jpg" />
+    <Content Include="img\SanPham\Lẩu Cua Đồng.jpg" />
+    <Content Include="img\SanPham\Lẩu Gà Ớt Hiểm.jpg" />
+    <Content Include="img\SanPham\Lẩu Hải Sản .jpg" />
+    <Content Include="img\SanPham\Lẩu Hải Sản Nấm.jpg" />
+    <Content Include="img\SanPham\Lẩu Hải Sản Thập Cẩm.jpg" />
+    <Content Include="img\SanPham\Mì Xào Hải Sản.jpg" />
+    <Content Include="img\SanPham\Mực Hấp Rim Mắm Tỏi.jpg" />
+    <Content Include="img\SanPham\Mực Nướng Muối Ớt.jpg" />
+    <Content Include="img\SanPham\Mực Trừng Hấp Gừng.jpg" />
+    <Content Include="img\SanPham\Mực Xào Chua Ngọt.jpg" />
+    <Content Include="img\SanPham\Ngao 2 Cồi Hấp Sả.jpg" />
+    <Content Include="img\SanPham\Nước Cam.jpg" />
+    <Content Include="img\SanPham\Nước Dưa Hấu.jpg" />
+    <Content Include="img\SanPham\Nước Khoáng.jpg" />
+    <Content Include="img\SanPham\Rượu Chivas.jpg" />
+    <Content Include="img\SanPham\Sinh Tố Xoài.jpg" />
+    <Content Include="img\SanPham\Sinh Tố Đu Đủ.jpg" />
+    <Content Include="img\SanPham\Sò Điệp Nướng Mỡ Hành.jpg" />
+    <Content Include="img\SanPham\Trà Bạc Hà.jpg" />
+    <Content Include="img\SanPham\Trà Lipton.jpg" />
+    <Content Include="img\SanPham\Trà Sen.jpg" />
+    <Content Include="img\SanPham\Trà Đào.jpg" />
+    <Content Include="img\SanPham\Trứng Đúc Thịt Bò Băm Hấp.jpg" />
+    <Content Include="img\SanPham\Tôm Chiên Xù.jpg" />
+    <Content Include="img\SanPham\Tôm Càng Xanh Hấp Nước Dừa.jpg" />
+    <Content Include="img\SanPham\Tôm Nướng Bơ Tỏi.jpg" />
+    <Content Include="img\SanPham\Tôm Sú Rang Me.jpg" />
+    <Content Include="img\SanPham\Éch Xào Sa Tế.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,5 @@
+C:\MonHoc\CN.Net\Nhom02_QuanLyNhaHang\DTO\bin\Debug\DTO.dll
+C:\MonHoc\CN.Net\Nhom02_QuanLyNhaHang\DTO\bin\Debug\DTO.pdb
+C:\MonHoc\CN.Net\Nhom02_QuanLyNhaHang\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+C:\MonHoc\CN.Net\Nhom02_QuanLyNhaHang\DTO\obj\Debug\DTO.dll
+C:\MonHoc\CN.Net\Nhom02_QuanLyNhaHang\DTO\obj\Debug\DTO.pdb
